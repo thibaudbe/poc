@@ -1,0 +1,22 @@
+{
+  "name": "babel-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "babel index.js -o build/compiled.js",
+    "start-dev": "babel-node index.js",
+    "start": "node compiled.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babelify": "^7.2.0",
+    "typescript": "^1.7.5",
+    "typescript-require": "^0.2.9-1"
+  }
+}
