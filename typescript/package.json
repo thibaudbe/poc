@@ -2,13 +2,10 @@
   "name": "typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./build/compiled.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --outFile build/compiled.js index.ts"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript-require": "^0.2.9-1"
-  }
+  "author": "Thibaud B.",
+  "license": "ISC"
 }

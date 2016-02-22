@@ -1,14 +1,14 @@
-// Initialize
-// require('typescript-require');
-// Get functions.ts
-// var funcs = require('./funcs.ts');
-// console.log(funcs.lowercase('HELLO!'));
-var funcs = {
-    lowercase: function (val) {
-        return val.toLowerCase();
-    },
-    uppercase: function (val) {
-        return val.toUpperCase();
-    }
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-console.log(funcs.lowercase('HELLO!'));
+var bar = module;
+('foo');
+var bar = (function (_super) {
+    __extends(bar, _super);
+    function bar() {
+        _super.apply(this, arguments);
+    }
+    return bar;
+})(bar.foo);

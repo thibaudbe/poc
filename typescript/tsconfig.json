@@ -1,26 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "noImplicitAny": true,
+    "module": "amd",
+    "target": "ES5",
     "removeComments": true,
     "preserveConstEnums": true,
-    "out": "./build/tsc.js",
+    "outFile": "./build/compiled.js",
+    "sourceRoot": "./",
+    "rootDir": "./",
     "sourceMap": true
   },
-  "filesGlob": [
-    "**/*.ts",
-    "**/*.tsx",
-    "!node_modules/**"
-  ],
-  "files": [
-    "app.ts",
-    "funcs.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "atom": {
-    "rewriteTsconfig": true
-  }
+  "files" : [
+    "./index.ts"		
+  ]
 }
