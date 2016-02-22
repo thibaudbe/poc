@@ -2,9 +2,9 @@
   "name": "typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/compiled.js",
+  "main": "./dist/bundle.js",
   "scripts": {
-    "build": "tsc --outFile build/compiled.js index.ts"
+    "build": "tsc --outFile dist/bundle.js src/index.ts"
   },
   "author": "Thibaud B.",
   "license": "ISC"

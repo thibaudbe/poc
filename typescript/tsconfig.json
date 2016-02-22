@@ -4,12 +4,12 @@
     "target": "ES5",
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "./build/compiled.js",
+    "outFile": "./dist/bundle.js",
     "sourceRoot": "./",
     "rootDir": "./",
     "sourceMap": true
   },
   "files" : [
-    "./index.ts"		
+    "./index.ts"
   ]
 }
