@@ -1,9 +1,9 @@
-module.exports = [
-  {
-    label: 'Cat',
-    value: 'meow'
-  },{
-    label: 'Dog',
-    value: 'bark'
-  }
-];
+export const cat = {
+  label: 'Cat',
+  value: 'meowwww'
+};
+
+export const dog = {
+  label: 'Dog',
+  value: 'barkkk'
+};
