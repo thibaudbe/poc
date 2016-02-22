@@ -1,9 +1,9 @@
 export const cat = {
   label: 'Cat',
-  value: 'meowwww'
+  value: 'meow'
 };
 
 export const dog = {
   label: 'Dog',
-  value: 'barkkk'
+  value: 'bark'
 };

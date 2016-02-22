@@ -1,3 +1,5 @@
+require('babel-core/register');
+
 import action from './action';
 import { cat, dog } from './data';
 
