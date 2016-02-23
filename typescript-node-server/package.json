@@ -1,0 +1,20 @@
+{
+  "name": "typescript-node-server",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "typings": "dist/app.d.ts",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "serve": "node dist/app.js",
+    "start": "nodemon dist/app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.0",
+    "typescript": "^1.8.2"
+  }
+}
