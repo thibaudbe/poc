@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "module": "amd",
     "target": "ES5",
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "outFile": "./dist/bundle.js",
-    "sourceRoot": "./",
-    "rootDir": "./",
-    "sourceMap": true
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "sourceRoot": "src",
+    "outDir": "dist"
   },
-  "files" : [
-    "./index.ts"
+  "exclude": [
+    "dist",
+    "node_modules"
   ]
 }
