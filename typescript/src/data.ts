@@ -1,9 +1,9 @@
-export const cat = {
+export const cat: Object = {
   label: 'Cat',
   value: 'meow'
 };
 
-export const dog = {
+export const dog: Object = {
   label: 'Dog',
   value: 'bark'
 };
