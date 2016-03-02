@@ -7,10 +7,9 @@ import App from './App';
 
 // Client side app rendered
 if (typeof window !== undefined) {
-
-  const initData = JSON.parse(readData('init_data'));
+  const initData = readData('init_data');
   const { message } = initData;
-  
+
   ReactDOM.render(
     <App { ...initData } />,
     document.getElementById('reactApp')

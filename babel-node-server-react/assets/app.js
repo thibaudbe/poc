@@ -23,7 +23,7 @@ const ReactApp = ReactDOMServer.renderToString(App(initData));
 app.get('/', (req, res) => {
   res.render('index.ejs', {
     reactOutput: ReactApp,
-    initData: initData
+    initData: JSON.stringify(initData)
   });
 });
 
