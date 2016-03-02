@@ -1,0 +1,35 @@
+{
+  "name": "babel-node-server-react",
+  "main": "server/app.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "npm run build-js && npm run build-server",
+    "build-js": "babel assets/js -d public/js",
+    "build-server": "babel assets -d server",
+    "watch": "npm run watch-js && npm run watch-server && npm run livereload",
+    "watch-js": "watchify --debug assets/js/ -d -o public/js/bundle.js -v -t babelify",
+    "watch-server": "nodemon assets/app.js --exec babel-node --presets es2015,react",
+    "livereload": "browser-sync start --proxy localhost:3000 --files './public/js/*.js'",
+    "start": "node server/app.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babel-register": "^6.6.0",
+    "babelify": "7.2.0",
+    "nodemon": "^1.9.0"
+  }
+}

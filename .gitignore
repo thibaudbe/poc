@@ -2,5 +2,7 @@ node_modules
 .DS_STORE
 *.log
 *.map
+*.sublime-project
 
 **/dist/*.js
+**/public/js/*.js

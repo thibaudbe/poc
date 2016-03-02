@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charSet="utf-8" />
+  <title>Babel node server react</title>
+</head>
+<body>
+
+  <div id="reactApp">
+    <span><%- reactOutput %></span>
+  </div>
+
+  <script id="init_data" data-value="<%= JSON.stringify(initData) %>"></script>
+  <script type="text/javascript" src="/js/bundle.js"></script>
+
+</body>
+</html>
