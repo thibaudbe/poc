@@ -1,0 +1,54 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "express/express.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "node/node.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "mime/mime.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-global.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-transition-group.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-linked-state-mixin.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-pure-render-mixin.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-create-fragment.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-perf.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-test-utils.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-css-transition-group.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    },
+    "react/react-addons-update.d.ts": {
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
+    }
+  }
+}

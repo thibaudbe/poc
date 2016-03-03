@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "sourceRoot": "assets/js",
+    "outDir": "public/js"
+  },
+  "filesGlob": [
+    "assets/**/**/*.ts",
+    "assets/**/**/*.tsx",
+    "!node_modules/**"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
