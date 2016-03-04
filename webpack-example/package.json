@@ -1,0 +1,14 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack -p --config conf/build.js",
+    "watch": "webpack --watch --config conf/watch.js"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.7",
+    "webpack": "^1.12.14"
+  }
+}
