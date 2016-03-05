@@ -8,3 +8,8 @@ node_modules
 **/public/js/**/*.js
 **/server/*.js
 **/server/js/**/*.js
+
+**/server/app/**/**/*.js
+**/server/public/*.js
+**/server/public/*.css
+**/server/util/**/**/*.js

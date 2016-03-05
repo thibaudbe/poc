@@ -4,8 +4,8 @@
   "typings": "server/app.d.ts",
   "scripts": {
     "postinstall": "npm run build",
-    "build": "tsc --outDir server",
-    "build-js": "tsc --outFile public/js/bundle.js assets/js/index.tsx",
+    "build": "npm run build-js && npm run build-server",
+    "build-js": "tsc --outFile public/bundle.js assets/app/index.tsx",
     "build-server": "tsc --outDir server",
     "watch": "npm run watch-js && npm run watch-server",
     "watch-js": "tsc -w",
@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.9.1",
-    "typescript": "^1.8.7"
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.9.0-dev.20160305",
+    "webpack": "^1.12.14"
   }
 }

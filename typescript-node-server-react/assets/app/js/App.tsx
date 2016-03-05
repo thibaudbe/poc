@@ -1,7 +1,11 @@
 import * as React from 'react';
 
 
-export default React.createClass({
+interface Props extends React.Props<App> {
+  message: string;
+}
+
+export default class App extends React.Component<Props, void> {
 
   render() {
     const { message } = this.props;
@@ -11,4 +15,4 @@ export default React.createClass({
     )
   }
 
-});
+}
