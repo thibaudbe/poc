@@ -4,23 +4,19 @@
   "typings": "server/app.d.ts",
   "scripts": {
     "postinstall": "npm run build",
-    "build": "npm run build-js && npm run build-server",
-    "build-js": "tsc --outFile public/bundle.js assets/app/index.tsx",
-    "build-server": "tsc --outDir server",
-    "watch": "npm run watch-js && npm run watch-server",
-    "watch-js": "tsc -w",
-    "watch-server": "tsc -w --outDir server",
+    "build": "webpack -p --config conf/build.js",
+    "watch": "webpack --watch --config conf/watch.js",
     "livereload": "nodemon server/app.js",
     "start": "node server/app.js"
   },
   "dependencies": {
-    "ejs": "^2.4.1",
     "express": "^4.13.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
     "nodemon": "^1.9.1",
+    "source-map-support": "^0.4.0",
     "ts-loader": "^0.8.1",
     "typescript": "^1.9.0-dev.20160305",
     "webpack": "^1.12.14"

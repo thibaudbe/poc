@@ -11,9 +11,8 @@ interface initDataObj {
 
 // Client side app rendered
 if (typeof window !== undefined) {
-  const initData: initDataObj = readData('init_data');
+  const initData: initDataObj = JSON.parse(readData('init_data'));
   const { message } = initData;
-  console.log('what a mess', message);
 
   ReactDOM.render(
     <App { ...initData } />,

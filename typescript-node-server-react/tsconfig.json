@@ -1,17 +1,8 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "isolatedModules": false,
+    "target": "es5",
     "jsx": "react",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "noImplicitAny": true,
-    "target": "ES5",
-    "outDir": "./server/",
-    "rootDir": "./assets/",
-    "sourceRoot": "./assets/",
-    "sourceMap": true
+    "noImplicitAny": true
   },
   "filesGlob": [
     "assets/**/**/**/*.ts",
@@ -41,6 +32,7 @@
     "typings/serve-static/serve-static.d.ts",
     "typings/tsd.d.ts"
   ],
+  "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": true
   }
