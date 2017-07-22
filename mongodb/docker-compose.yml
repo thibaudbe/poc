@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongodb
+    container_name: test-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGODB_USERNAME: "test"
+      MONGODB_DATABASE: "test-mongodb"
+      MONGODB_PASSWORD: "test"
+      MONGODB_ROOT_PASSWORD: "test"
+      # MONGODB_USERNAME: "${db_user_env}"
+    volumes:
+      - .docker-data/mongodb:/var/lib/mongodb
+    restart: always
